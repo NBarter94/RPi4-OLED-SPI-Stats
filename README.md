@@ -9,7 +9,7 @@ The script is pre-configured for 128x64 SPI OLED Display
 <table align="center" style="margin: 0px auto;">
   <tr>
     <th>stats.py</th>
-    <th>monitor.py(COMING SOON)</th>
+    <th>monitor.py (COMING SOON)</th>
   </tr>
   <tr>
     <td><img align="right" src="https://i.ytimg.com/vi/lRTQ0NsXMuw/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA2eFunUPnMf_Cveih2-b_JEXZxig" height="220"></img></td>
