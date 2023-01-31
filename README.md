@@ -2,17 +2,14 @@
 
 OLED Stats Display Script For Raspberry Pi
 
-Full setup instructions available on my blog - https://www.the-diy-life.com/add-an-oled-stats-display-to-raspberry-pi-os-bullseye/
-Or my Youtube Channel - https://youtu.be/lRTQ0NsXMuw
-
-The script is pre-configured for 128x64 I2C OLED Display, but can easily be modified to run on a 128x32 I2C OLED Display
+The script is pre-configured for 128x64 SPI OLED Display
 
 ## Screenshots:
 
 <table align="center" style="margin: 0px auto;">
   <tr>
     <th>stats.py</th>
-    <th>monitor.py</th>
+    <th>monitor.py(COMING SOON)</th>
   </tr>
   <tr>
     <td><img align="right" src="https://i.ytimg.com/vi/lRTQ0NsXMuw/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA2eFunUPnMf_Cveih2-b_JEXZxig" height="220"></img></td>
@@ -26,6 +23,15 @@ The script is pre-configured for 128x64 I2C OLED Display, but can easily be modi
 
 <img src="https://www.the-diy-life.com/wp-content/uploads/2021/11/Screenshot-2021-11-14-at-22.16.39-1024x576.jpg">
 
+DATA/D1 =19
+CLK = 23
+DC/SA0 = 10
+RST = 8
+CS = 24
+3v3 = X
+VCC/3v = 1
+GND = 6
+
 2. Upgrade your Raspberry Pi firmware and reboot:
 
 ```shell
@@ -34,11 +40,12 @@ The script is pre-configured for 128x64 I2C OLED Display, but can easily be modi
     $ sudo reboot
 ```
 
-3. Install python3-pip & upgrade the setuptools
+3. Install python3-pip, upgrade the setuptools & install psuutil
 
 ```shell
     $ sudo apt-get install python3-pip
     $ sudo pip3 install --upgrade setuptools
+    $ sudo pip install psutil
 ```
 
 4. Next, we’re going to install the Adafruit CircuitPython library using the following commands:
