@@ -52,44 +52,20 @@ The script is pre-configured for 128x64 I2C OLED Display, but can easily be modi
     $ sudo python3 raspi-blinka.py
 ```
 
-5. Check the `I2C` status using the command:
+5. 
 
-```shell
-    $ sudo i2cdetect -y 1
-
-        0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
-    00:                         -- -- -- -- -- -- -- --
-    10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
-    20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
-    30: -- -- -- -- -- -- -- -- -- -- -- -- 3c -- -- --
-    40: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
-    50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
-    60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
-    70: -- -- -- -- -- -- -- --
-```
-
-6. Next, we need to install the CircuitPython libraries specific to the display. Start by entering the following commands:
-
-```shell
-    $ sudo pip3 install adafruit-circuitpython-ssd1306
-    $ sudo pip3 install psutil
-    $ sudo reboot
-    $ sudo apt-get install python3-pil
-```
+6. 
 
 7. Now we need to download the python script from out github:
 
 ```shell
-    $ git clone https://github.com/mklements/OLED_Stats.git
+    $ git clone https://github.com/NBarter94/RPi4-OLED-SPI-Stats.git
 
-    $ cd OLED_Stats
+    $ cd RPi4-OLED-SPI-Stats
     $ cp PixelOperator.ttf ~/PixelOperator.ttf
     $ cp stats.py ~/stats.py
-    
-    $ cp psutilstats.py ~/psutilstats.py
-    
+        
     $ cp lineawesome-webfont.ttf ~/lineawesome-webfont.ttf
-    $ cp monitor.py ~/monitor.py
 
 ```
 
@@ -115,10 +91,10 @@ Remember to change your username (pi below) if you're not using the default user
     @reboot python3 /home/pi/monitor.py &
 ```
 
-9. At the end DELETE the OLED_Stats folder and reboot
+9. At the end DELETE the RPi4-OLED-SPI-Stats folder and reboot
 
 ```shell
-    $ sudo rm -rf OLED_Stats
+    $ sudo rm -rf RPi4-OLED-SPI-Stats
     $ sudo reboot
 ```
 
