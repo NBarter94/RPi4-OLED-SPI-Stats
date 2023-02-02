@@ -12,7 +12,7 @@ The script is pre-configured for 128x64 SPI OLED Display
     <th>monitor.py (COMING SOON)</th>
   </tr>
   <tr>
-    <td><img align="right" src="https://i.ytimg.com/vi/lRTQ0NsXMuw/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA2eFunUPnMf_Cveih2-b_JEXZxig" height="220"></img></td>
+    <td><img align="right" src="https://i.imgur.com/42kikDA.jpg" height="220"></img></td>
     <td><img align="right" src="https://i.ytimg.com/vi/94ZjxjmhBrY/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBTY9ptxf2VqzErucUVVxqmK3Pw6g" height="220"></img></td>
   </tr>
   </table>
