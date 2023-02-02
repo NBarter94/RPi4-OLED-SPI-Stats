@@ -21,14 +21,14 @@ The script is pre-configured for 128x64 SPI OLED Display
 
 <img src="https://i.imgur.com/tp1aQ2N.jpg">
 ```shell
-DATA/D1 = 19
-CLK = 23
-DC/SA0 = 10
-RST = 8
-CS = 24
-3v3 = X
-VCC/3v = 1
-GND = 6
+$DATA/D1 = 19
+$CLK = 23
+$DC/SA0 = 10
+$RST = 8
+$CS = 24
+$3v3 = X
+$VCC/3v = 1
+$GND = 6
 ```
 
 2. Upgrade your Raspberry Pi firmware and reboot:
