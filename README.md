@@ -19,7 +19,7 @@ The script is pre-configured for 128x64 SPI OLED Display
 
 1. Connect **GND, VCC(3.3v), SCL, & SDA** ports of the display according to the picture shown below:
 
-<img src="https://www.the-diy-life.com/wp-content/uploads/2021/11/Screenshot-2021-11-14-at-22.16.39-1024x576.jpg">
+<img src="https://i.imgur.com/tp1aQ2N.jpg">
 
 DATA/D1 =19
 CLK = 23
