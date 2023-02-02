@@ -59,24 +59,18 @@ The script is pre-configured for 128x64 SPI OLED Display
     $ sudo python3 raspi-blinka.py
 ```
 
-5. 
-
-6. 
-
-7. Now we need to download the python script from out github:
+5. Now we need to download the python script from out github:
 
 ```shell
     $ git clone https://github.com/NBarter94/RPi4-OLED-SPI-Stats.git
 
     $ cd RPi4-OLED-SPI-Stats
-    $ cp PixelOperator.ttf ~/PixelOperator.ttf
     $ cp stats.py ~/stats.py
-        
-    $ cp lineawesome-webfont.ttf ~/lineawesome-webfont.ttf
+    
 
 ```
 
-8. For activating the `crontab` follow the procedure:
+6. For activating the `crontab` follow the procedure:
 
 ```shell
     $ crontab -e
@@ -88,17 +82,9 @@ Remember to change your username (pi below) if you're not using the default user
 
 ```
     @reboot python3 /home/pi/stats.py &
-
-    OR
-    
-    @reboot python3 /home/pi/psutilstats.py &
-    
-    OR
-
-    @reboot python3 /home/pi/monitor.py &
 ```
 
-9. At the end DELETE the RPi4-OLED-SPI-Stats folder and reboot
+7. At the end DELETE the RPi4-OLED-SPI-Stats folder and reboot
 
 ```shell
     $ sudo rm -rf RPi4-OLED-SPI-Stats
