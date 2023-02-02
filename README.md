@@ -40,12 +40,13 @@ The script is pre-configured for 128x64 SPI OLED Display
     $ sudo reboot
 ```
 
-3. Install python3-pip, upgrade the setuptools & install psuutil
+3. Install python3-pip, upgrade the setuptools, install psuutil and reboot:
 
 ```shell
     $ sudo apt-get install python3-pip
     $ sudo pip3 install --upgrade setuptools
     $ sudo pip install psutil
+    $ sudo reboot
 ```
 
 4. Next, we’re going to install the Adafruit CircuitPython library using the following commands:
@@ -63,14 +64,12 @@ The script is pre-configured for 128x64 SPI OLED Display
 
 ```shell
     $ git clone https://github.com/NBarter94/RPi4-OLED-SPI-Stats.git
-
     $ cd RPi4-OLED-SPI-Stats
-    $ cp stats.py ~/stats.py
-    
+    $ cp stats.py ~/stats.py 
 
 ```
 
-6. For activating the `crontab` follow the procedure:
+6. Now we need to add the script to crontab for startup procedure:
 
 ```shell
     $ crontab -e
