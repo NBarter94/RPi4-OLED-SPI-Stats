@@ -59,17 +59,29 @@ The script is pre-configured for 128x64 SPI OLED Display
     $ wget https://raw.githubusercontent.com/adafruit/Raspberry-Pi-Installer-Scripts/master/raspi-blinka.py
     $ sudo python3 raspi-blinka.py
 ```
-
-5. Now we need to download the python script from out github:
+5. Now we need to check we have git installed & if not we can install it
 
 ```shell
+    $ git --version
+```
+
+If you don't see a response or it states git: command not found you'll need to follow the steps below.
+
+```shell
+    $ sudo apt install git
+```
+
+6. Now we know we've got git, we now need to download the python script from our github:
+
+```shell
+    $
     $ git clone https://github.com/NBarter94/RPi4-OLED-SPI-Stats.git
     $ cd RPi4-OLED-SPI-Stats
     $ cp stats.py ~/stats.py 
 
 ```
 
-6. Now we need to add the script to crontab for startup procedure:
+7. Now we need to add the script to crontab for startup procedure:
 
 ```shell
     $ crontab -e
@@ -83,7 +95,7 @@ Remember to change your username (pi below) if you're not using the default user
     @reboot python3 /home/pi/stats.py &
 ```
 
-7. At the end DELETE the RPi4-OLED-SPI-Stats folder and reboot
+8. At the end DELETE the RPi4-OLED-SPI-Stats folder and reboot
 
 ```shell
     $ sudo rm -rf RPi4-OLED-SPI-Stats
